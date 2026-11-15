@@ -53,10 +53,10 @@ DOMAIN-SUFFIX,wps.com
 DOMAIN-SUFFIX,aliyun.com
 DOMAIN-SUFFIX,alibabacloud.com
 DOMAIN-SUFFIX,aliyuncs.com
-DOMAIN-SUFFIX, tencentcloud.com
+DOMAIN-SUFFIX,tencentcloud.com
 DOMAIN-SUFFIX,myqcloud.com
 DOMAIN-SUFFIX,volces.com
-DOMAIN-SUFFIX, volcengine.com
+DOMAIN-SUFFIX,volcengine.com
 DOMAIN-SUFFIX,189.cn
 DOMAIN-SUFFIX,139.com
 DOMAIN-SUFFIX,115.com
@@ -69,7 +69,7 @@ DOMAIN-SUFFIX,taobao.com
 DOMAIN-SUFFIX,tmall.com
 DOMAIN-SUFFIX,alipay.com
 DOMAIN-SUFFIX,alipayobjects.com
-DOMAIN-SUFFIX, jd.com
+DOMAIN-SUFFIX,jd.com
 DOMAIN-SUFFIX,jdcloud.com
 DOMAIN-SUFFIX,pinduoduo.com
 DOMAIN-SUFFIX,vip.com
