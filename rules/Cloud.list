@@ -1,0 +1,20 @@
+# Cloud rules
+DOMAIN-SUFFIX,dropbox.com
+DOMAIN-SUFFIX,dropboxapi.com
+DOMAIN-SUFFIX,box.com
+DOMAIN-SUFFIX,notion.so
+DOMAIN-SUFFIX,notion.site
+DOMAIN-SUFFIX,slack.com
+DOMAIN-SUFFIX,slack-edge.com
+DOMAIN-SUFFIX,zoom.us
+DOMAIN-SUFFIX,webex.com
+DOMAIN-SUFFIX,atlassian.com
+DOMAIN-SUFFIX,trello.com
+DOMAIN-SUFFIX,figma.com
+DOMAIN-SUFFIX,canva.com
+DOMAIN-SUFFIX,grammarly.com
+DOMAIN-SUFFIX,evernote.com
+DOMAIN-SUFFIX,1password.com
+DOMAIN-SUFFIX,proton.me
+DOMAIN-SUFFIX,protonmail.com
+DOMAIN-SUFFIX,fastmail.com
