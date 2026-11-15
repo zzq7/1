@@ -1,46 +1,56 @@
 # My Shadowrocket
 
-Personal Shadowrocket configuration and supplementary rule lists.
+A personal Shadowrocket configuration with categorized rule lists.
 
 ## Files
 
 - `Shadowrocket.conf`: main configuration, based on [mogdodo/Shadowrocket lazy_mdd.conf](https://github.com/mogdodo/Shadowrocket/blob/main/lazy_mdd.conf).
-- `rules/Proxy.list`: supplementary overseas application, AI, streaming, social, developer, cloud, shopping and gaming domains.
-- `rules/Direct.list`: supplementary mainland China services.
-- `rules/Reject.list`: conservative advertising and tracker blocklist.
+- `rules/AI.list`: AI assistants and generative AI services.
+- `rules/Streaming.list`: video and music streaming.
+- `rules/Social.list`: social networks, messaging communities and forums.
+- `rules/Developer.list`: Git hosting, package registries, documentation and developer tools.
+- `rules/GoogleMicrosoft.list`: Google and Microsoft overseas services.
+- `rules/Cloud.list`: cloud storage, productivity and collaboration.
+- `rules/Shopping.list`: overseas shopping, payment and travel services.
+- `rules/Gaming.list`: international game platforms and publishers.
+- `rules/Proxy.list`: reserved for additional general proxy rules.
+- `rules/Direct.list`: supplementary mainland China direct rules.
+- `rules/Reject.list`: conservative advertising and tracking-domain blocklist.
 
 ## Install
 
-In Shadowrocket, add the remote configuration using:
+Add this remote configuration in Shadowrocket:
 
 `https://raw.githubusercontent.com/zzq7/1/master/Shadowrocket.conf`
 
-Keep node subscriptions separately in Shadowrocket's node list. This configuration does not contain node credentials.
+Keep node subscriptions separately in Shadowrocket's node list. This configuration contains no node credentials or subscription URLs.
 
-## Network and privacy design
+## DNS, IPv6 and privacy
 
 - IPv6 is enabled; IPv4 remains preferred for compatibility (`prefer-ipv6 = false`).
-- Main and fallback DNS use Google/Cloudflare DoH through the selected proxy.
-- DNS fallback is also proxied; system DNS is not intentionally used as a fallback.
+- Primary and fallback DNS use Google and Cloudflare DoH through the selected proxy.
+- DNS fallback is also proxied; system DNS is not intentionally configured as a fallback.
 - Common hard-coded IPv4 DNS endpoints are listed in `hijack-dns`.
-- QUIC is blocked for proxy-routed connections only (`block-quic = all-proxy`); direct traffic is not globally blocked.
-- In the Shadowrocket app, manually enable **Settings → UDP → Disable STUN**. This reduces STUN-based address exposure but is not a guarantee that every WebRTC/ICE path is disabled.
+- The upstream config's Apple/iCloud system-DNS exceptions have been removed.
+- QUIC is blocked only for proxy-routed connections (`block-quic = all-proxy`); this does not globally disable UDP/443.
+- In the Shadowrocket app, manually enable **Settings → UDP → Disable STUN**. This reduces STUN-based address exposure but does not guarantee that every WebRTC/ICE path is disabled.
 
 ## Rule order
 
-1. Reject supplementary ad/tracker rules.
-2. Upstream service-specific rules (AI, Apple, streaming, social, developer, etc.).
-3. Supplementary proxy and direct rules.
-4. Upstream Global / China rules and GEOIP fallback.
-5. Final unmatched traffic goes to PROXY.
+1. Supplementary reject rules.
+2. Upstream service-specific rules and categorized proxy rules.
+3. Supplementary direct rules.
+4. Upstream China rules and GEOIP fallback.
+5. Unmatched traffic uses `FINAL,PROXY`.
 
-## Safety notes
+## Notes
 
-- Do not commit subscription URLs, UUIDs, passwords, private keys, or personal node details.
-- The rule lists are supplementary. Upstream rule providers may change domain coverage.
-- If a service stops working, temporarily comment out the relevant rule in the corresponding list and reload the configuration.
-- This configuration has not been tested on every carrier, Wi-Fi network, app, or Shadowrocket version. Validate DNS and IPv6 egress after import.
+- These lists are supplementary to the upstream BlackMatrix7 and mogdodo rules.
+- Domain lists cannot guarantee coverage of every app endpoint; services may add CDN or regional domains.
+- If an app stops working, temporarily disable only its category list and reload the configuration to isolate the cause.
+- Validate DNS leak results and IPv4/IPv6 egress after importing. Actual behavior can vary by iOS version, Shadowrocket version, network and proxy node.
+- Do not commit subscription URLs, UUIDs, passwords, private keys or personal node details.
 
-## License and attribution
+## Attribution
 
-The base configuration and upstream rule sets retain their respective authors' licenses and attribution. This repository's custom rule additions are maintained separately.
+The base configuration and upstream rule sets retain their respective authors' licenses and attribution. Custom supplementary lists are maintained in this repository.
