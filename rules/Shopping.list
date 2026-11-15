@@ -1,0 +1,14 @@
+# Shopping rules
+DOMAIN-SUFFIX,amazon.com
+DOMAIN-SUFFIX,ebay.com
+DOMAIN-SUFFIX,etsy.com
+DOMAIN-SUFFIX,aliexpress.com
+DOMAIN-SUFFIX,temu.com
+DOMAIN-SUFFIX,shopify.com
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,booking.com
+DOMAIN-SUFFIX,airbnb.com
+DOMAIN-SUFFIX,expedia.com
+DOMAIN-SUFFIX,tripadvisor.com
