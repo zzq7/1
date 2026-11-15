@@ -1,0 +1,99 @@
+# My Shadowrocket - Direct supplementary rules
+# Mainland China services and common domestic applications.
+# Keep these entries narrow; upstream China/China_Domain and app-specific lists remain authoritative.
+
+# Chinese search, portals and content
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,baidubcr.com
+DOMAIN-SUFFIX,bdstatic.com
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,iqiyipic.com
+DOMAIN-SUFFIX,youku.com
+DOMAIN-SUFFIX,tudou.com
+DOMAIN-SUFFIX,letv.com
+DOMAIN-SUFFIX,mgtv.com
+DOMAIN-SUFFIX,acfun.cn
+DOMAIN-SUFFIX,douban.com
+DOMAIN-SUFFIX,doubanio.com
+DOMAIN-SUFFIX,zhihu.com
+DOMAIN-SUFFIX,zhimg.com
+DOMAIN-SUFFIX,xiaohongshu.com
+DOMAIN-SUFFIX,xhscdn.com
+DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,weibocdn.com
+DOMAIN-SUFFIX,douyin.com
+DOMAIN-SUFFIX,douyincdn.com
+DOMAIN-SUFFIX,iesdouyin.com
+DOMAIN-SUFFIX,kuaishou.com
+DOMAIN-SUFFIX,ksyungslb.com
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,biligame.com
+DOMAIN-SUFFIX,hdslb.com
+
+# Chinese messaging, meetings and office
+DOMAIN-SUFFIX,weixin.qq.com
+DOMAIN-SUFFIX,wechat.com
+DOMAIN-SUFFIX,work.weixin.qq.com
+DOMAIN-SUFFIX,qq.com
+DOMAIN-SUFFIX,qpic.cn
+DOMAIN-SUFFIX,qlogo.cn
+DOMAIN-SUFFIX,tenpay.com
+DOMAIN-SUFFIX,dingtalk.com
+DOMAIN-SUFFIX,feishu.cn
+DOMAIN-SUFFIX,larksuite.com
+DOMAIN-SUFFIX,bytedance.com
+DOMAIN-SUFFIX,volccdn.com
+DOMAIN-SUFFIX,feishu.cn
+DOMAIN-SUFFIX,kingsoft.com
+DOMAIN-SUFFIX,wps.cn
+DOMAIN-SUFFIX,wps.com
+
+# Chinese cloud, storage and file services
+DOMAIN-SUFFIX,aliyun.com
+DOMAIN-SUFFIX,alibabacloud.com
+DOMAIN-SUFFIX,aliyuncs.com
+DOMAIN-SUFFIX, tencentcloud.com
+DOMAIN-SUFFIX,myqcloud.com
+DOMAIN-SUFFIX,volces.com
+DOMAIN-SUFFIX, volcengine.com
+DOMAIN-SUFFIX,189.cn
+DOMAIN-SUFFIX,139.com
+DOMAIN-SUFFIX,115.com
+DOMAIN-SUFFIX,123pan.com
+DOMAIN-SUFFIX,quark.cn
+DOMAIN-SUFFIX,uc.cn
+
+# Chinese shopping and payment
+DOMAIN-SUFFIX,taobao.com
+DOMAIN-SUFFIX,tmall.com
+DOMAIN-SUFFIX,alipay.com
+DOMAIN-SUFFIX,alipayobjects.com
+DOMAIN-SUFFIX, jd.com
+DOMAIN-SUFFIX,jdcloud.com
+DOMAIN-SUFFIX,pinduoduo.com
+DOMAIN-SUFFIX,vip.com
+DOMAIN-SUFFIX,suning.com
+DOMAIN-SUFFIX,meituan.com
+DOMAIN-SUFFIX,dianping.com
+DOMAIN-SUFFIX,ele.me
+
+# Chinese music and reading
+DOMAIN-SUFFIX,music.163.com
+DOMAIN-SUFFIX,163.com
+DOMAIN-SUFFIX,kuwo.cn
+DOMAIN-SUFFIX,kugou.com
+DOMAIN-SUFFIX,qqmusic.qq.com
+DOMAIN-SUFFIX,qidian.com
+DOMAIN-SUFFIX,zongheng.com
+DOMAIN-SUFFIX,zhangyue.com
+
+# Domestic development and software distribution
+DOMAIN-SUFFIX,gitee.com
+DOMAIN-SUFFIX,gitcode.com
+DOMAIN-SUFFIX,oschina.net
+DOMAIN-SUFFIX,csdn.net
+DOMAIN-SUFFIX,aliyun.com
+DOMAIN-SUFFIX,cnblogs.com
+DOMAIN-SUFFIX,segmentfault.com
+DOMAIN-SUFFIX,cnpmjs.org
