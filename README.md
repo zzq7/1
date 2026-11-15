@@ -54,3 +54,17 @@ Keep node subscriptions separately in Shadowrocket's node list. This configurati
 ## Attribution
 
 The base configuration and upstream rule sets retain their respective authors' licenses and attribution. Custom supplementary lists are maintained in this repository.
+
+## 3x-ui Mihomo global routing
+
+Use this URL in **3x-ui → Global routing rules HTTPS URL**:
+
+`https://raw.githubusercontent.com/zzq7/1/master/mihomo/hrules-standard.yaml`
+
+The file defines the Mihomo proxy groups and routing-rule order. The rule-provider files are intentionally fetched from their upstream Hrules URLs, while the China IP provider is fetched from MetaCubeX. This keeps the main profile under this repository without duplicating upstream rule data.
+
+- 3x-ui continues to generate and retain its VPN node entries.
+- This remote profile contributes proxy groups, rule providers and rules, as supported by the 3x-ui global-routing feature.
+- Provider refresh interval is 6 hours.
+- Changes to upstream provider files can take effect on their next refresh; changes to this repository's main YAML take effect after 3x-ui refreshes/reloads the global routing profile.
+- Upstream project: [hcloudlab/Hrules](https://github.com/hcloudlab/Hrules).
